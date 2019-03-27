@@ -15,13 +15,9 @@ function createFareMultiplier(integer) {
     };
 };
 
-const fareDoubler = function(num){
-  return createFareMultiplier(2)(num);
-}
+const fareDoubler = createFareMultiplier(2)
 
-const fareTripler = function(num){
-  return createFareMultiplier(3)(num);
-}
+const fareTripler = createFareMultiplier(3)
 
 function fetchSpecifiedDrivers(drivers, fn) {
   return fn(drivers);
